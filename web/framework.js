@@ -1,6 +1,5 @@
 goog.provide('com.oxygenxml.JatsExtension');
 
-console.log('HERTE');
 /**
  * Constructor for the jats Extension.
  *
@@ -31,7 +30,6 @@ com.oxygenxml.JatsExtension.prototype.editorLoadedHandler = function(editor, e) 
   var actionIdInsertImage = 'insert.image';
 
   var originalInsertImageAction = actionsManager.getActionById(actionIdInsertImage);
-  console.log('inset image action :', originalInsertImageAction);
   if (originalInsertImageAction) {
     var insertImageAction = new sync.actions.InsertImage(
       originalInsertImageAction,
